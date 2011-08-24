@@ -12,6 +12,7 @@ module CustomFields
     include Types::Boolean
     include Types::Date
     include Types::File
+    include Types::Picture
     include Types::HasOne
     include Types::HasMany
 

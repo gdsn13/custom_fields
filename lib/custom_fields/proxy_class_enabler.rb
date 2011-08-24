@@ -105,6 +105,7 @@ module CustomFields
             (self.custom_fields || []).each do |field|
               case field.kind
               when 'file' then hash[field._alias] = self.send(field._name.to_sym).url
+              when 'picture' then hash[field._alias] = self.send(field._name.to_sym).url
               else
                 hash[field._alias] = self.send(field._name.to_sym)
               end
