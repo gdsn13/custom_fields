@@ -13,6 +13,7 @@ module CustomFields
     include Types::Date
     include Types::File
     include Types::Picture
+    include Types::ProtectedFile
     include Types::HasOne
     include Types::HasMany
 
